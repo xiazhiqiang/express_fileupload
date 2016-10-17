@@ -1,18 +1,18 @@
 # express_fileupload
 
-## Discription
-- Large file upload based on nodejs, express framework and webuploader plugins.
+## Description
+- Large file upload based on NodeJs, express framework and WebUploader plugins.
 - Support slice of file uploading, merging and file downloading.
 
-## Directory Discription
+## Directory Description
 
 - myapp: the main app directory created by express.
-- upload: file upload directory including slice chunks and tempory directories.
+- upload: file upload directory including slice chunks and temporary directories.
 
 ## Usage
 
-- Install nodejs.
-- Clone or download to the webroot directory.
+- Install NodeJs.
+- Clone or download to the web root directory.
 - Execute command(the default app port is `6888`):
 
 ```
