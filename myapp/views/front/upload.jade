@@ -1,0 +1,20 @@
+extends ../layout/front
+
+block content
+    link(rel="stylesheet" type="text/css" href="webuploader/webuploader.css")
+    link(rel="stylesheet" type="text/css" href="css/front/upload.css")
+
+
+    #uploader.wu-example
+        .dndArea
+            .file-select
+                #picker 选择文件
+                p 或将文件拖到这里
+        // 用来存放文件信息
+        #thelist.uploader-list
+        button#ctlBtn.btn.btn-default 开始上传
+
+
+    script(src="webuploader/webuploader.js")
+    script(src='js/md5.min.js')
+    script(src='js/front/upload.js')

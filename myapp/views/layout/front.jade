@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        - var defaultTitle = 'MyApp';
+        title= title ? [title, defaultTitle].join(' | ') : defaultTitle
+        link(rel='stylesheet' href='/css/reset.min.css')
+        script(src='/js/jquery-1.8.3.min.js')
+    body
+        block content
+

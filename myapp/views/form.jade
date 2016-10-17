@@ -1,0 +1,15 @@
+extends layout/front
+
+block content
+    h1 Form
+    form(action="/form_process" method="post" enctype="multipart/form-data")
+        p
+            label(for='firstName') FirstName
+            input(type='text' name='first_name' id='firstName')
+        p
+            label(for='lastName') LastName
+            input(type='text' name='last_name' id='lastName')
+        p
+            input(type='file' name='file')
+        p
+            input(type='submit' value='submit')

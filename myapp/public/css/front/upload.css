@@ -1,0 +1,65 @@
+.dndArea {
+    position: relative;
+    height: 200px;
+    text-align: center;
+    border: 2px dotted #ccc;
+    background: #f6f6f6;
+}
+
+.file-select {
+    padding: 58px 0 0 0;
+}
+
+.file-select p {
+    font-size: 16px;
+    color: #a7a7a7;
+    margin: 20px auto 0;
+}
+
+#picker .webuploader-pick {
+    padding: 20px 40px;
+}
+
+.item {
+    position: relative;
+    width: 165px;
+    height: 150px;
+    float: left;
+    overflow: hidden;
+    border: 2px dotted #ddd;
+}
+
+.file-info {
+    position: relative;
+}
+
+.file-info h4 {
+    padding: 10px;
+}
+
+.file-info p {
+    padding: 0 10px;
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #DBE9FF;
+    opacity: 0.5;
+}
+
+#ctlBtn {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    color: #ffe9e9;
+    background: #ec7e7e;
+    border: 1px solid #ccc;
+}
