@@ -1,9 +1,8 @@
 extends ../layout/front
 
 block content
-    link(rel="stylesheet" type="text/css" href="webuploader/webuploader.css")
+    link(rel="stylesheet" type="text/css" href="plugins/webuploader/webuploader.css")
     link(rel="stylesheet" type="text/css" href="css/front/upload.css")
-
 
     #uploader.wu-example
         .dndArea
@@ -14,7 +13,4 @@ block content
         #thelist.uploader-list
         button#ctlBtn.btn.btn-default 开始上传
 
-
-    script(src="webuploader/webuploader.js")
-    script(src='js/md5.min.js')
-    script(src='js/front/upload.js')
+    script(src="js/require-2.1.11.min.js" defer async="true" data-main="js/front/upload.js")
