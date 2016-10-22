@@ -8,6 +8,15 @@ define(['jquery', 'md5', 'webuploader'], function ($, md5, WebUploader) {
         //-------------公有属性-------------
         this.config = {};
         this.uploader = {};
+    }
+
+    // -------------公共方法--------------
+
+    // 组件初始化(公有方法)
+    Uploader.prototype.init = function (cfg) {
+        if (!this.support()) {
+            return false;
+        }
 
         //-------------私有属性-------------
         var _config = {
@@ -130,18 +139,9 @@ define(['jquery', 'md5', 'webuploader'], function ($, md5, WebUploader) {
             });
         }
 
-        // 组件初始化(公有方法)
-        Uploader.prototype.init = function (cfg) {
-            if (!this.support()) {
-                return false;
-            }
-
-            _initConfig.apply(this, [cfg]);
-            _initEvent.apply(this);
-        };
-    }
-
-    // -------------公共方法--------------
+        _initConfig.apply(this, [cfg]);
+        _initEvent.apply(this);
+    };
 
     // 组件支持
     Uploader.prototype.support = function () {
